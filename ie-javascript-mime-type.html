@@ -5,7 +5,7 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <title>Sofles - Limitless</title>
+        <title>Javascript MIME-type in Internet Explorer</title>
         <meta name="description" content="The blog of Mikko Keskinen">
         <meta name="author" content="Mikko Keskinen">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -47,16 +47,32 @@
 <article>
     
     <h2 class="entry-title">
-        <a href="http://www.youtube.com/watch?v=Pv-Do30-P8A" target="_blank">Sofles - Limitless</a>
+        <a href="http://blog.kesoil.com/ie-javascript-mime-type.html" rel="bookmark"
+           title="Permalink to Javascript MIME-type in Internet Explorer">Javascript MIME-type in Internet Explorer</a>
     </h2>
 
     <div class="entry-content">
-        <p>Amazing stop-motion graffiti.</p>
+        <p>Just wasted an hour debugging a simple site because of this.</p>
+<p>When writing inline javascript for IE, don't use the standard
+<code>application/javascript</code>-type because Internet Explorer won't run the code.</p>
+<div class="highlight"><pre><span class="c">&lt;!-- Doesn&#39;t work with IE --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;application/javascript&quot;</span><span class="nt">&gt;</span>
+    <span class="kd">var</span> <span class="nx">testing</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="nt">&lt;/script&gt;</span>
+</pre></div>
+
+
+<p>Just change the MIME-type to <code>text/javascript</code> and you're good to go:</p>
+<div class="highlight"><pre><span class="c">&lt;!-- Works in all browsers --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
+    <span class="kd">var</span> <span class="nx">testing</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="nt">&lt;/script&gt;</span>
+</pre></div>
 
 <div class="post-info">
     <p>
-        <time class="published" datetime="2013-11-23T12:00:00+02:00">
-                <strong>Published:</strong> Sat 23 November 2013
+        <time class="published" datetime="2013-12-02T17:30:00+02:00">
+                <strong>Published:</strong> Mon 02 December 2013
         </time>
     </p>
 </div>    </div>

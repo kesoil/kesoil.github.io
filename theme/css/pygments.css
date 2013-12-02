@@ -31,7 +31,7 @@
 .highlight .ld { color: #000000 } /* Literal.Date */
 .highlight .m { color: #333; } /* Literal.Number */
 .highlight .s { color: #173efe } /* Literal.String */
-.highlight .na { color: #c4a000 } /* Name.Attribute */
+.highlight .na { color: #333; } /* Name.Attribute */
 .highlight .nb { color: #204a87 } /* Name.Builtin */
 .highlight .nc { color: #000000 } /* Name.Class */
 .highlight .no { color: #000000 } /* Name.Constant */
@@ -43,7 +43,7 @@
 .highlight .nn { color: #000000 } /* Name.Namespace */
 .highlight .nx { color: #000000 } /* Name.Other */
 .highlight .py { color: #000000 } /* Name.Property */
-.highlight .nt { color: #204a87; } /* Name.Tag */
+.highlight .nt { color: #204a87; font-weight: bold;} /* Name.Tag */
 .highlight .nv { color: #000000 } /* Name.Variable */
 .highlight .ow { color: #204a87; } /* Operator.Word */
 .highlight .w { color: #f8f8f8; text-decoration: underline } /* Text.Whitespace */
