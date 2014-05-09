@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>kesoil</title><link href="http://blog.kesoil.com/" rel="alternate"></link><link href="http://blog.kesoil.com/feeds/all.atom.xml" rel="self"></link><id>http://blog.kesoil.com/</id><updated>2014-03-05T20:30:00+02:00</updated><entry><title>Creating local time with pytz</title><link href="http://blog.kesoil.com/creating-local-time-with-pytz.html" rel="alternate"></link><updated>2014-03-05T20:30:00+02:00</updated><author><name>Mikko Keskinen</name></author><id>tag:blog.kesoil.com,2014-03-05:creating-local-time-with-pytz.html</id><summary type="html">&lt;p&gt;I tried to create a datetime in a specific timezone like this:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>kesoil</title><link href="http://blog.kesoil.com/" rel="alternate"></link><link href="http://blog.kesoil.com/feeds/all.atom.xml" rel="self"></link><id>http://blog.kesoil.com/</id><updated>2014-05-09T16:30:00+03:00</updated><entry><title>Chrome Origin Chip</title><link href="http://blog.kesoil.com/chrome-origin-chip.html" rel="alternate"></link><updated>2014-05-09T16:30:00+03:00</updated><author><name>Mikko Keskinen</name></author><id>tag:blog.kesoil.com,2014-05-09:chrome-origin-chip.html</id><summary type="html">&lt;p&gt;So Google has decided to mess with every user and especially web developer by 
+hiding the full URL in the address bar.&lt;/p&gt;
+&lt;p&gt;For those like me who would like to disable the "experiment" type the
+following address to the URL bar, press enter, choose disabled and relaunch Chrome.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nl"&gt;chrome:&lt;/span&gt;&lt;span class="c1"&gt;//flags/#origin-chip-in-omnibox&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The feature is called Origin Chip. Here is what it looks like:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Origin Chip Enabled" src="http://blog.kesoil.com/images/origin_chip_enabled.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Compare that to an image with the Origin Chip disabled:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Origin Chip Disabled" src="http://blog.kesoil.com/images/origin_chip_disabled.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;More info in &lt;a href="http://www.allenpike.com/2014/burying-the-url/"&gt;Allen Pikes
+Blog&lt;/a&gt;. Discussion in &lt;a href="https://news.ycombinator.com/item?id=7677898"&gt;Hacker News&lt;/a&gt;.&lt;/p&gt;</summary></entry><entry><title>Creating local time with pytz</title><link href="http://blog.kesoil.com/creating-local-time-with-pytz.html" rel="alternate"></link><updated>2014-03-05T20:30:00+02:00</updated><author><name>Mikko Keskinen</name></author><id>tag:blog.kesoil.com,2014-03-05:creating-local-time-with-pytz.html</id><summary type="html">&lt;p&gt;I tried to create a datetime in a specific timezone like this:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;datetime&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pytz&lt;/span&gt;
 

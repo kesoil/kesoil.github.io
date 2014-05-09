@@ -114,3 +114,9 @@ code {
     overflow: scroll;
 }
 
+article p img {
+    border-radius: 6px;
+    background-color: #FFFDFA;
+    box-shadow: 0px 2px 5px #c6c2be;
+}
+
