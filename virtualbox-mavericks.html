@@ -54,16 +54,16 @@
     <div class="entry-content">
         <p>After upgrading to OS X Mavericks I was experiencing strange errors when
 trying to start a VirtualBox VM. e.g.</p>
-<div class="highlight"><pre><span class="n">Progress</span> <span class="n">state</span><span class="o">:</span> <span class="n">NS_ERROR_FAILURE</span>
-<span class="nl">VBoxManage:</span> <span class="n">error</span><span class="o">:</span> <span class="n">Failed</span> <span class="n">to</span> <span class="n">create</span> <span class="n">the</span> <span class="n">host</span><span class="o">-</span><span class="n">only</span> <span class="n">adapter</span>
-<span class="nl">VBoxManage:</span> <span class="n">error</span><span class="o">:</span> <span class="n">VBoxNetAdpCtl</span><span class="o">:</span> <span class="n">Error</span> <span class="k">while</span> <span class="n">adding</span> <span class="n">new</span> <span class="n">interface</span><span class="o">:</span> <span class="n">failed</span> <span class="n">to</span> <span class="n">open</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">vboxnetctl</span><span class="o">:</span> <span class="n">No</span> <span class="n">such</span> <span class="n">file</span> <span class="n">or</span> <span class="n">directory</span>
-<span class="nl">VBoxManage:</span> <span class="n">error</span><span class="o">:</span> <span class="n">Details</span><span class="o">:</span> <span class="n">code</span> <span class="n">NS_ERROR_FAILURE</span> <span class="p">(</span><span class="mh">0x80004005</span><span class="p">),</span> <span class="n">component</span> <span class="n">HostNetworkInterface</span><span class="p">,</span> <span class="n">interface</span> <span class="n">IHostNetworkInterface</span>
-<span class="nl">VBoxManage:</span> <span class="n">error</span><span class="o">:</span> <span class="n">Context</span><span class="o">:</span> <span class="s">&quot;int handleCreate(HandlerArg*, int, int*)&quot;</span> <span class="n">at</span> <span class="n">line</span> <span class="mi">66</span> <span class="n">of</span> <span class="n">file</span> <span class="n">VBoxManageHostonly</span><span class="p">.</span><span class="n">cpp</span>
+<div class="highlight"><pre>Progress state: NS_ERROR_FAILURE
+VBoxManage: error: Failed to create the host-only adapter
+VBoxManage: error: VBoxNetAdpCtl: Error while adding new interface: failed to open /dev/vboxnetctl: No such file or directory
+VBoxManage: error: Details: code NS_ERROR_FAILURE (0x80004005), component HostNetworkInterface, interface IHostNetworkInterface
+VBoxManage: error: Context: &quot;int handleCreate(HandlerArg*, int, int*)&quot; at line 66 of file VBoxManageHostonly.cpp
 </pre></div>
 
 
 <p>Problem was solved by running the following command in the command line:</p>
-<div class="highlight"><pre><span class="n">sudo</span> <span class="s">&quot;/Library/Application Support/VirtualBox/LaunchDaemons/VirtualBoxStartup.sh&quot;</span> <span class="n">restart</span>
+<div class="highlight"><pre>sudo <span class="s2">&quot;/Library/Application Support/VirtualBox/LaunchDaemons/VirtualBoxStartup.sh&quot;</span> restart
 </pre></div>
 
 
@@ -72,7 +72,7 @@ will remove them at boot so you'll need to run it after every boot.</p>
 
 <div class="post-info">
     <p>
-        <time class="published" datetime="2013-11-26T11:00:00+02:00">
+        <time class="published" datetime="2013-11-26T11:00:00+02:00+02:00">
                 <strong>Published:</strong> Tue 26 November 2013
         </time>
     </p>
